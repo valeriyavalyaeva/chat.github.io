@@ -6,24 +6,29 @@
 <body>
 	
 
+<!-- You have to put this piece of JavaScript code into your web page
+Note: Use <!DOCTYPE html> on the page where snippet located for better rendering
+-->
 <link type="text/css" rel="stylesheet" href="https://valcent1.bugfocus.com/clientweb/chat-client-v4/css/form.css">
 <script type="text/javascript">
     SERVICE_PATTERN_CHAT_CONFIG = {
-        appId: '8e5945afbdea402e8200761475766e8b',
-        apiUrl: 'https://valcent1.bugfocus.com/clientweb/api/v2',
+        appId: 'a86801b051e3486c9186b21e7051ce06',
+        apiUrl: 'https://valcent1.bugfocus.com/clientweb/api/v1',
         tenantUrl: 'example.com',
         chatPath: 'https://valcent1.bugfocus.com/clientweb/chat-client-v4/'
-
-        /*        
-         // Default customer data, it can be collected on current site's context
-         first_name: '',
-         last_name: '',
-         email: '',
-         phone_number: ''
- 		*/
     };
 </script>
+
 <script src="https://valcent1.bugfocus.com/clientweb/chat-client-v4/js/init.js"></script> 
+ <div class="sp-callback-form" id="sp-callback-form">
+   <label>Request a callback</label>
+   <label>&nbsp;</label>
+   <label>Name:</label>
+   <input type="text" id="sp-callback-name" placeholder="Name" />
+   <label>Phone:</label>
+   <input type="tel" id="sp-callback-phone_number" placeholder="Phone"  required />
+   <button id="sp-callback-submit-inline">Request Call</button>
+</div>
 	
 	
 <html>
